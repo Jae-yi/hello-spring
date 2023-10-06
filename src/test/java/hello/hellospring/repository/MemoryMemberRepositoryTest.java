@@ -14,7 +14,7 @@ public class MemoryMemberRepositoryTest {
 
     @AfterEach // 메소드가 끝날때마다 실행
     public void afterEach() {
-        // 테스트 끼리 의존관계 없이 설계 되어야함
+        // 테스트끼리 의존관계 없이 설계 되어야함
         // 이를 위해 메소드가 끝날때마다 공용데이터를 비워주는 코드 생성
         repository.clearStore();
     }
@@ -25,6 +25,7 @@ public class MemoryMemberRepositoryTest {
         member.setName("spring");
 
         repository.save(member);
+
         Member result = repository.findById(member.getId()).get();
 //        Assertions.assertEquals(member, result);
         assertThat(member).isEqualTo(result);
