@@ -1,18 +1,9 @@
-package hello.hellospring.domain;
+package hello.hellospring.controller;
 
-public class Member {
+public class MemberForm {
 
-    private Long id;
+    //웹 등록 화면에서 데이터를 전달 받을 폼 객체
     private String name;
-    private String age;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -21,12 +12,13 @@ public class Member {
     public void setName(String name) {
         this.name = name;
     }
-
+    private String age;
     public String getAge() {
         return age;
     }
-
     public void setAge(String age) {
         this.age = age;
     }
+
+
 }

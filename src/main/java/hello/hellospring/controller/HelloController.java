@@ -12,14 +12,14 @@ public class HelloController {
     @GetMapping("hello")
     public String hello(Model model) {
         model.addAttribute("data", "hello!");
-        return "hello"; // return값으로 문자를 반환하면 -> resources/template 경로에 이름과 일치하는 화면을 찾아서 처리함
+        return "hello"; // return값으로 문자를 반환하면 -> resources/templates 경로에 이름과 일치하는 화면을 찾아서 처리함
 
     }
 
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam(value = "name") String name, Model model) { // param으로 name을 반드시 넣어야함
         model.addAttribute("name", name);
-        return "hello-template"; // return값으로 문자를 반환하면 -> resources/template 경로에 이름과 일치하는 화면을 찾아서 처리함
+        return "hello-template"; // return값으로 문자를 반환하면 -> resources/templates 경로에 이름과 일치하는 화면을 찾아서 처리함
 
     }
 
