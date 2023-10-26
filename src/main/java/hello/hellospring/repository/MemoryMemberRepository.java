@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-public class MemoryMemberRepository implements MemberRepository { // DB 구축 이전이라 가정하고, Memory 기반의 데이터 저장소 사용
+public class MemoryMemberRepository implements MemberRepository { // DB 이전이라 가정하고, Memory 기반의 데이터 저장소 사용
     /**
      * 동시성 문제가 고려되어 있지 않음, 실무에서는 ConcurrentHashMap, AtomicLong 사용 고려
      */

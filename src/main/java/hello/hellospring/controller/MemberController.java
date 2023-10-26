@@ -13,6 +13,7 @@ import java.util.List;
 @Controller
 public class MemberController {
 
+    // new 새로운 생성자 만들지 않는 이유 : 하나만 생성해서 공통적으로 사용하도록 하기 위해
     private final MemberService memberService;
 
     // 생성자에 @Autowired : 연관된 객체를 스프링에서 알아서 찾아 넣어줌

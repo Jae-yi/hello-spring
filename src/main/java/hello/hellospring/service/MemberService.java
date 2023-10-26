@@ -9,10 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-
 public class MemberService {
 
-    //private final MemberRepository memberRepository = new MemoryMemberRepository(); // 기존 : 회원 서비스에서 새로운 MemoryMemberRepository 직접 생성
+   // 기존 : 회원 서비스에서 새로운 MemoryMemberRepository 직접 생성
 
     private final MemberRepository memberRepository; // 현재 : repository를 의존성 주입 가능하게 변경
 
