@@ -31,7 +31,6 @@ public class MemberController {
     public String create(MemberForm form) {
         Member member = new Member();
         member.setName(form.getName());
-        member.setAge(form.getAge());
         memberService.join(member);
         return "redirect:/";
     }
