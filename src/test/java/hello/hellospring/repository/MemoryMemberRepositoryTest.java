@@ -16,7 +16,7 @@ public class MemoryMemberRepositoryTest {
     public void afterEach() {
         // 테스트끼리 의존관계 없이 설계 되어야함
         // 이를 위해 메소드가 끝날때마다 공용데이터를 비워주는 코드 생성
-        repository.clearStore();
+//        repository.clearStore();
     }
 
     @Test

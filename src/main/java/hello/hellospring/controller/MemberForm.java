@@ -13,15 +13,4 @@ public class MemberForm {
         this.name = name;
     }
 
-    private String age;
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
-
 }
